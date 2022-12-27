@@ -4,9 +4,9 @@ A Flutter project as a simple example for ToDo list App, user can view a list of
 
 ## Screenshots
 
-![Home Screen](https://drive.google.com/file/d/1-0D2BtRMMDJeVrUjN8vKtGXf07hUlEpB/view?usp=sharing "Home Screen")
+![Todo list](https://drive.google.com/file/d/1-0D2BtRMMDJeVrUjN8vKtGXf07hUlEpB/view "Todo list")
 
-![Loading State](https://drive.google.com/file/d/1-GgOrGCF8UAZJyH7wrRECCJsA4XQG86_/view?usp=sharing "Loading State")
+![Adding Todo](https://drive.google.com/file/d/1-GgOrGCF8UAZJyH7wrRECCJsA4XQG86_/view "Todo list")
 
 
 
