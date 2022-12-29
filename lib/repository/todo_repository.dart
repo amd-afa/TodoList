@@ -19,7 +19,7 @@ class TodoRepository {
     }
   }
 
-  List<Todo> parsedTodoJson(final todoData) {
+  List<Todo> parsedTodoJson(dynamic todoData) {
     return List<Todo>.from(todoData.map((todo) => Todo.fromJson(todo)));
   }
 

@@ -16,7 +16,7 @@ class TodoAsyncNotifier extends StateNotifier<AsyncValue<List<Todo>>> {
 
   _intiState() async {
     try {
-      final fetchedTodos = await getIt<TodoRepository>().getTodos();
+      final List<Todo> fetchedTodos = await getIt<TodoRepository>().getTodos();
       state = AsyncData(fetchedTodos);
     } catch (error) {
       state = AsyncError(

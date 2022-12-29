@@ -7,6 +7,7 @@ class LottieErrorWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: Alignment.center,
       padding: const EdgeInsets.symmetric(
         vertical: 52,
         horizontal: 42,

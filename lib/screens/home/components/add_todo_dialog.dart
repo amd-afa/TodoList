@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:todolist/providers/todo_provider.dart';
 
-class AddTodoDialog extends StatefulWidget {
+class AddTodoDialog extends ConsumerStatefulWidget {
   const AddTodoDialog({
     Key? key,
-    required this.ref,
   }) : super(key: key);
 
-  final WidgetRef ref;
-
   @override
-  State<AddTodoDialog> createState() => _AddTodoDialogState();
+  ConsumerState<AddTodoDialog> createState() => _AddTodoDialogState();
 }
 
-class _AddTodoDialogState extends State<AddTodoDialog> {
+class _AddTodoDialogState extends ConsumerState<AddTodoDialog> {
   TextEditingController textEditingControllerTodoInput =
       TextEditingController();
   FocusNode focusNodeTodoInput = FocusNode();
@@ -63,7 +60,7 @@ class _AddTodoDialogState extends State<AddTodoDialog> {
                   onPressed: () {
                     String todoTitle = textEditingControllerTodoInput.text;
                     if (todoTitle.isNotEmpty) {
-                      widget.ref.read(todoProvider.notifier).addTodo(
+                      ref.read(todoProvider.notifier).addTodo(
                             todoTitle,
                           );
                       Navigator.pop(context);
