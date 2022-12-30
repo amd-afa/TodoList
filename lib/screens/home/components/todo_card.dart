@@ -15,6 +15,7 @@ class TodoCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 16),
         height: 80,
         decoration: const BoxDecoration(
             color: Colors.white,
