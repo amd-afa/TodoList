@@ -3,8 +3,11 @@ import 'package:todolist/screens/home/components/add_todo_dialog.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({
+    required this.totalTodos,
     Key? key,
   }) : super(key: key);
+
+  final int totalTodos;
 
   @override
   Widget build(BuildContext context) {
@@ -21,15 +24,15 @@ class HomeAppBar extends StatelessWidget {
               children: <Widget>[
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const <Widget>[
-                    Text(
+                  children: <Widget>[
+                    const Text(
                       'Hi Ahmad 👋',
                       style: TextStyle(fontSize: 30),
                     ),
-                    SizedBox(height: 4),
+                    const SizedBox(height: 4),
                     Text(
-                      '200 Tasks for you today',
-                      style: TextStyle(
+                      '$totalTodos Total Tasks for you',
+                      style: const TextStyle(
                         fontSize: 18,
                         color: Colors.black54,
                       ),

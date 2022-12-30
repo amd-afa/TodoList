@@ -16,7 +16,9 @@ class HomeBody extends ConsumerWidget {
         data: (List<Todo> data) {
           return CustomScrollView(
             slivers: <Widget>[
-              const HomeAppBar(),
+              HomeAppBar(
+                totalTodos: data.length,
+              ),
               TodosList(
                 todoList: data,
               ),
